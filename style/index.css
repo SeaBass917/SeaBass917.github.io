@@ -217,6 +217,12 @@ div#education table{
     font-size: 20px;
     width: 100%;
 }
+div#education tr td:nth-child(1){
+    min-width: 80px;
+}
+div#education tr td:nth-child(3){
+    min-width: 40px;
+}
 div#education{
     display: flex;
     flex-direction: row;
@@ -230,7 +236,7 @@ div#education img{
 }
 @media screen and (max-width: 1500px){
     div#education table{
-        width: 80%;
+        width: 95%;
     }
     div#education{
         flex-direction: column;
