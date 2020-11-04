@@ -1,0 +1,347 @@
+
+/*
+    NOTE:
+
+    Grays  : ["#ffffff","#f0f0f0","#d9d9d9","#bdbdbd","#969696","#737373","#525252","#252525"]
+    Purple : ["#fcfbfd","#efedf5","#dadaeb","#bcbddc","#9e9ac8","#807dba","#6a51a3","#4a1486"]
+    BLue   : ["#f7fbff","#deebf7","#c6dbef","#9ecae1","#6baed6","#4292c6","#2171b5","#084594"]
+    Green  : ["#f7fcf5","#e5f5e0","#c7e9c0","#a1d99b","#74c476","#41ab5d","#238b45","#005a32"]
+
+    Perrywinkle "#4076f5"
+
+    border-width: top right bot left;
+*/
+
+html,body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body > div{
+    height: 100%;
+}
+
+/*************
+ * Side panel
+ */
+
+div.sidepanel {
+    background-color: #f0f0f0;
+    box-shadow: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 280px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-right: 2px solid rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 710px){
+    div.sidepanel {
+        display: none;
+    }
+}
+
+img.pfp{
+    border-radius: 50%;
+    width: 150px;
+    margin: 50px 35px 30px 35px;
+
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+div.namecard{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 25px;
+}
+div.namecard>*{
+    margin: 0;
+    font-style: oblique;
+}
+div.namecard>h2{
+    font-size: 18pt;
+}
+
+div.tableofcontents{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 180px;
+
+}
+.button {
+    color: #000;
+    font-size: 14pt;
+    font-variant: small-caps;
+    font-weight: bold;
+
+    margin: 5px;
+
+    text-decoration: none;
+    position: relative;
+}
+.button:hover {
+    color: #4076f5;
+}
+.button:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4076f5;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.contactsbox{
+    margin: 20px;
+    width: 180px;
+    bottom: 35px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.contactsbox p{
+    margin: 0px 10px;
+}
+.contactsbox p,i{
+    font-weight: bold;
+    font-size: 16px;
+}
+.contactsbox a{
+    margin: 10px 0px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.githublink{
+    color: #551A8B;
+}
+.linkedinlink{
+    color: #0073B1;
+}
+
+footer{
+    font-size: 9pt;
+    font-style: italic;
+    text-align: center;
+    color: #525252;
+    margin: 20px;
+    
+    position: absolute;
+    bottom: 0px;
+}
+
+/*************
+ * Main Panel
+ */
+
+div#main {
+    background-color: #d9d9d9;
+    float: right;
+    width: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+div#main::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+div#main h1{
+    margin: 25px;
+}
+
+div.index{
+    padding: 25px;
+}
+
+div#home img {
+    height: 241px;
+    object-fit: cover;
+}
+
+div#about{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+div#about img{
+    width: 450px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+@media screen and (max-width: 1200px){
+    div#about img{
+        width: 250px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+@media screen and (max-width: 830px){
+    div#about img{
+        display: none;
+    }
+}
+
+div#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+div#education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+div#education table{
+    margin: 0px 25px 25px 25px;
+    font-style: oblique;
+    font-size: 20px;
+    width: 100%;
+}
+div#education{
+    display: flex;
+    flex-direction: row;
+}
+div#education img{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 630px;
+    object-fit: fill;
+}
+@media screen and (max-width: 1500px){
+    div#education table{
+        width: 80%;
+    }
+    div#education{
+        flex-direction: column;
+    }
+    div#education img{
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        width: 100%;
+    }
+}
+
+div#employment{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    text-align: right;
+}
+div#employment img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 400px;
+    width: 210px;
+    object-fit: cover;
+}
+@media screen and (max-width: 1080px){
+    div#employment img{
+        display: none;
+    }
+}
+div#employment p{
+    font-size: 20px;
+    margin: 0px 25px 10px 25px;
+}
+div#employment p#jobtitle{
+    font-weight: bold;
+    font-style: oblique;
+}
+div#employment p#jobtimeline{
+    font-style: oblique;
+}
+div#employment p#jobdescription{
+    margin: 35px 25px 10px 25px;
+}
+
+.cardbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+
+    background-color: white;
+    border-bottom: 25px solid white;
+    margin: 10px;
+
+    width: 300px;
+    height: 485px;
+
+    overflow: hidden;
+    position: relative; 
+    cursor: pointer;
+}
+div.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+div.card > img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 1s ease-in-out 0s;
+}
+div.card:hover img {
+    height: 10%;
+    transition: all 0.25s ease-in-out 0s;
+}
+div.card > div{
+    padding: 10px;
+    height: 50%;
+}
+div.card p{
+    margin: 0px;
+    /* white-space: nowrap; */
+}
+div.card h2, h4{
+    margin: 0px;
+}
+div.card .button{
+    font-size: 14px;
+    position: absolute;
+    bottom: -50px;
+    transition: all 1s ease-in-out 0s;
+}
+@media screen and (max-width: 980px){
+    div.card .button{
+        background-color: white;
+        border: 10px solid white;
+        box-shadow: 4px 18px rgba(0,0,0,0.4);
+    }
+}
+div.card:hover .button {
+    bottom: 0px;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+#publications div.card{
+    width: 680px;
+}
