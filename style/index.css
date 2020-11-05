@@ -203,21 +203,16 @@ div#about p{
     font-size: 20pt;
 }
 div#about ul{
+    font-weight: bold;
     list-style-type: square;
     
-    margin: 0px;
+    margin: 0px 10px;
     font-size: 20pt;
 }
 div#about ul p{
     margin: 0px;
 }
-@media screen and (max-width: 1300px){
-    div#about img{
-        width: 250px;
-        height: 250px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-    }
+@media screen and (max-width: 1270px){
     div#aboutTextContainer{
         display: flex;
     }
@@ -230,18 +225,25 @@ div#about ul p{
     div#about p{
         font-size: 14pt;
     }
-}
-@media screen and (max-width: 1170px){
     div#about img{
         display: none;
     }
 }
 @media screen and (max-width: 850px){
+    div#about {
+        text-align: center;
+    }
     div#aboutTextContainer{
         flex-direction: column;
     }
     div#about{
         justify-content: center;
+    }
+    div#about ul{
+        list-style-type: none;
+        
+        margin: 0px 0px 25px 0px;
+        padding: 0px 0px;
     }
 }
 
