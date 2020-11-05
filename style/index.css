@@ -200,19 +200,19 @@ div#about img{
 }
 div#about p{
     margin: 25px;
-    font-size: 20pt;
+    font-size: 26pt;
 }
 div#about ul{
     font-weight: bold;
     list-style-type: square;
     
     margin: 0px 10px;
-    font-size: 20pt;
+    font-size: 26pt;
 }
 div#about ul p{
     margin: 0px;
 }
-@media screen and (max-width: 1270px){
+@media screen and (max-width: 1400px){
     div#aboutTextContainer{
         display: flex;
     }
