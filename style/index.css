@@ -419,7 +419,16 @@ div.card .button{
     bottom: -50px;
     transition: all 1s ease-in-out 0s;
 }
-@media screen and (max-width: 980px){
+@media screen and (max-width: 982px){
+    div.card{
+    
+        background-color: #191C24;
+        border-bottom: 25px solid #191C24;
+        margin: 10px;
+    
+        width: 200px;
+        height: 324px;
+    }
     div.card .button{
         background-color: #1D1D1D;
         border: 10px solid #1D1D1D;
