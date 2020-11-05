@@ -409,8 +409,11 @@ div.card > div{
 div.card p{
     margin: 0px;
 }
-div.card h2, h4{
+div.card h2{
     margin: 0px;
+}
+div.card h4{
+    margin: 0px 0px 10px 0px;
 }
 div.card .button{
     color: white;
@@ -441,5 +444,48 @@ div.card:hover .button {
 }
 
 #publications div.card{
+    cursor: auto;
     width: 680px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #090B10;
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.modalTitleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modalCloseBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modalCloseBtn:hover,
+.modalCloseBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

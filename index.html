@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="res/favicon.png">
 
+    <script src="scripts/index.js"></script>
+
 </head>
 
 <body>
@@ -172,23 +174,20 @@
             <div id="projects">
                 <h1>Projects</h1>
                 <div class="cardbox">
-                    <div id="glocr" class="card">
+                    <div id="project7" class="card">
                         <img src="res/wordseg.png" alt="Segmented Words">
                         <div>
                             <h2>GLOCR</h2>
                             <h4>2020 (In Progess)</h4>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Integer commodo ipsum eu ex luctus, a commodo turpis lacinia. 
-                                Aliquam sed augue ligula. Suspendisse rutrum, nunc sit amet porttitor 
-                                efficitur, nisi eros gravida velit, in laoreetcommodo ipsum eu ex luctus,
-                                a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
-                                nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
+                                This project will be building some of the necessary image analysis foundations to interpret and 
+                                transmit grocery lists from a board to your phone. These foundations include the following operations 
+                                on hand-written phrases: character segmentation, word/phrase segmentation, and character recognition.
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project7Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="syncronicity" class="card">
+                    <div id="project6" class="card">
                         <img src="res/patGraph.png" alt="Graph Pattern">
                         <div>
                             <h2>Syncronicity: Pattern Authoring Tool</h2>
@@ -201,10 +200,10 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project6Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="pacman" class="card">
+                    <div id="project5" class="card">
                         <img src="res/pacman.png" alt="Pacman">
                         <div>
                             <h2>Pacman AI (Berkeley)</h2>
@@ -217,10 +216,10 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project5Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="azgd" class="card">
+                    <div id="project4" class="card">
                         <img src="res/sysFlow-uasd.png" alt="Flow Diagram">
                         <div>
                             <h2>GPU Powered Signal Demodulation</h2>
@@ -233,10 +232,10 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project4Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="meddev" class="card">
+                    <div id="project3" class="card">
                         <img src="res/label-maker.png" alt="LabelMaker UI">
                         <div>
                             <h2>Medical Device Recall Classification</h2>
@@ -249,10 +248,10 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project3Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="tage" class="card">
+                    <div id="project2" class="card">
                         <img src="res/tage-comp.png" alt="TAGE Branch Predictor Schematic">
                         <div>
                             <h2>TAGE Branch Predictor</h2>
@@ -265,10 +264,10 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project2Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="uvfit" class="card">
+                    <div id="project1" class="card">
                         <img src="res/uvfit.png" alt="UV Fit Breadboard">
                         <div>
                             <h2>UV Fit</h2>
@@ -281,10 +280,10 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project1Btn" class="button">More...</a>
                         </div>
                     </div>
-                    <div id="mips" class="card">
+                    <div id="project0" class="card">
                         <img src="res/MIPS-pipeline-white.jpg" alt="5 Stage MIPS Pipeline">
                         <div>
                             <h2>5-Stage MIPS 32-bit Processor</h2>
@@ -297,7 +296,7 @@
                                 a commodo turpis lacinia. Aliquam sed augue ligula. Suspendisse rutrum, 
                                 nunc sit amet porttitor efficitur, nisi eros gravida velit, in laoreet
                             </p>
-                            <a class="button">More...</a>
+                            <a id="project0Btn" class="button">More...</a>
                         </div>
                     </div>
                 </div>
@@ -352,6 +351,136 @@
         </div>
     </div>
 
+    <div id="project7Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>GLOCR</h2>
+                <span id="project7BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+                <p>
+                    This project will be building some of the necessary image analysis foundations to interpret and 
+                    transmit grocery lists from a board to your phone. These foundations include the following operations 
+                    on hand-written phrases: character segmentation, word/phrase segmentation, and character recognition.
+                </p>
+                <h3>Phase I (Word Segmentation)</h3>
+                <p>
+                    Using the “documents” portion of the IAM database (see Figure 1) an algorithm will be constructed that takes 
+                    in a handwritten document and outputs the sentences and words as image files. Word segmentation is the critical 
+                    part here, but for analysis purposes it would be productive to output the line segmentation step. There will also 
+                    be some pre-processing involved including but not limited to: isolating the written text from the full document and 
+                    noise reduction.
+                </p>
+                <center><img src="res/wordseg.png" alt="Segmented Words" style="width: 50%;"></center>
+                <h3>Phase II (Character Segmentation) (Current Phase)</h3>
+                <p>
+                    The goal of this phase is to segment handwritten words into its character components. This will be tested on the 
+                    “words” subsection of the IAM database (see Figure 3) and the resulting images from Phase I. Once provided an image 
+                    of a word this algorithm will produce an ordered list of images for each of the characters in the word.
+                </p>
+                <h3>Phase III (Character Recognition)</h3>
+                <p>
+                    Character recognition is often done using pretrained and heavy deep neural nets. Such nets are compute intensive 
+                    and would not fit the scope of this project, since ideally this would be run on an embedded device. For that reason 
+                    this phase will involved a simple algorithm. This would be trained on EMNIST dataset or a derivative of this dataset.
+                </p>
+            </div>
+            <div class="modalFooterDiv">
+                <p>Project can be accessed from this repository: <a href="https://github.com/SeaBass917/glocr" class="button"><i class="fab fa-github"></i>github</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="project6Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>Syncronicity: Pattern Authoring Tool</h2>
+                <span id="project6BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="project5Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>Pacman AI (Berkeley Open Source)</h2>
+                <span id="project5BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="project4Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>GPU Powered Signal Demodulation</h2>
+                <span id="project4BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="project3Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>Medical Device Recall Classification</h2>
+                <span id="project3BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="project2Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>TAGE Branch Predictor</h2>
+                <span id="project2BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="project1Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>UV Fit</h2>
+                <span id="project1BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
+    <div id="project0Modal" class="modal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>5-Stage Pipelined 32bit MIPS Processor</h2>
+                <span id="project0BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+            </div>
+            <div class="modalFooterDiv">
+                
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
