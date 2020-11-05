@@ -45,8 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     // When the user clicks anywhere outside of the modal, close it
                     // NOTE: this technically means clicking on the modal, the stuff inside is "contents"
                     window.onclick = function(event) {
-                        if (event.target.className == "modal") {
+                        if (event.target.className.includes("modal")) {
                             event.target.style.display = "none"
+                            event.target.classList.remove("showModal")
                         }
                     }
                 }
