@@ -32,32 +32,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     // When the user clicks on the button, open the modal
                     btn.onclick = function() {
-                        modal.style.display = "block";
+                        modal.style.display = "block"
+                        modal.classList.add("showModal")
                     }
                     
                     // When the user clicks on (x), close the modal
                     btnClose.onclick = function() {
-                        modal.style.display = "none";
+                        modal.style.display = "none"
+                        modal.classList.remove("showModal")
                     }
                     
                     // When the user clicks anywhere outside of the modal, close it
                     // NOTE: this technically means clicking on the modal, the stuff inside is "contents"
                     window.onclick = function(event) {
                         if (event.target.className == "modal") {
-                            event.target.style.display = "none";
+                            event.target.style.display = "none"
                         }
                     }
                 }
                 else{
-                    console.error(`No closing button for ${projectName} modal in DOM.`);
+                    console.error(`No closing button for ${projectName} modal in DOM.`)
                 }
             }
             else{
-                console.error(`No opening button for ${projectName} modal in DOM.`);
+                console.error(`No opening button for ${projectName} modal in DOM.`)
             }
         }
         else{
-            console.error(`No modal div for ${projectName} in DOM.`);
+            console.error(`No modal div for ${projectName} in DOM.`)
         }
     }
 })
