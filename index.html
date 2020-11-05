@@ -509,7 +509,54 @@
                 <span id="project3BtnClose" class="modalCloseBtn">&times;</span>
             </div>
             <div class="modalMainDiv">
-                
+                <p>
+                    This work sought to explore novel methods of classifying hardware, software,
+                    and security threats in device recall information. Previous work utilized 
+                    key-word search based approaches, which worked well for hardware and software
+                    classification, but was not as effective when trying to classify security threats.
+                    Using a more complex language model like a weighted dictionary showed anincrease in 
+                    classification accuracy across all three classes.
+                </p>
+                <p>
+                    The data provided for the project was raw tabular data from the FDA. As such, in order to any sort of 
+                    classification the data first needed to be annotated.
+                    In order to expidite this process I designed an UI using python's Tkinter library that allowed me to 
+                    quickly annotate a subset (1000 of 10440) of the samples.
+                </p>
+                <center><img src="res/label-maker.png" alt="Annotation tool used in medical device recall classification project." style="width: 50%;"></center>
+                <p>
+                    Notable features of the classifier
+                </p>
+                <ul>
+                    <li>Counter for number of samples annotated in the session.</li>
+                    <li>Live classification of the given sample from the current model.</li>
+                    <li>
+                        Options to retrive a sample:
+                        <ul>
+                            <li>At random</li>
+                            <li>With a high confidence from the classifier</li>
+                            <li>With a low confidence from the classifier</li>
+                        </ul>
+                    </li>
+                    <li>Searching for samples with a given keyword.</li>
+                </ul>
+                <p>
+                    8-fold accuracy of the classifier when compared to tradition grep methods used in previous work:
+                </p>
+                <table style="border: 1px solid white;">
+                    <th>
+                        <td style="font-weight: bold; text-align: right; border-right: 1px solid white; border-bottom: 1px solid white;">Class</td> <td style="font-weight: bold; border-bottom: 1px solid white;">Weighted Dictionary Accuracy</td> <td style="font-weight: bold; border-bottom: 1px solid white; border-left: 1px solid white;">Key-Word Accuracy</td>
+                    </th>
+                    <tr>
+                        <td></td><td style="text-align: right; border-right: 1px solid white;">Security</td> <td style="text-align: center;">97.9%</td> <td style="text-align: center;">47.6%</td>
+                    </tr>
+                    <tr>
+                        <td></td><td style="text-align: right; border-right: 1px solid white;">Hardware</td> <td style="text-align: center;">98.4%</td> <td style="text-align: center;">87.4%</td>
+                    </tr>
+                    <tr>
+                        <td></td><td style="text-align: right; border-right: 1px solid white;">Software</td> <td style="text-align: center;">99.1%</td> <td style="text-align: center;">71.8%</td>
+                    </tr>
+                </table>
             </div>
             <div class="modalFooterDiv">
                 
@@ -523,7 +570,23 @@
                 <span id="project2BtnClose" class="modalCloseBtn">&times;</span>
             </div>
             <div class="modalMainDiv">
-
+                <center><img src="res/tage-comp.png" alt="TAGE design schematic" style="width: 50%;"></center>
+                <p>
+                    This research sought to compare the performance of a low-budget(2KB) perceptron-based branch predictor to the state of the art
+                    TAGE branch predictor at a similar budget. The TAGE in this work was implemented and benchmarked on an FPGA, running Seznec’s L-TAGE 
+                    design on the Simple-Scalar benchmarks in Verilog.
+                </p>
+                <center><img src="res/tage-internals.png" alt="TAGE internal design schematic, hand-drawn" style="width: 50%;"></center>
+                <p>
+                    The source code was not openly available, so the paper had to be studied and the TAGE engineered from the description.
+                </p>
+                <p>
+                    The basic idea behind a TAGE design involves hashing into tables of counters using the branch history and current instruction counter 
+                    in the hashing function.
+                    The counters keep track of the branching patterns, while the hashing ensures that the counter we read is associcated with the 
+                    current state. The TAGE uses multiple tables with a geometrically increasing history length. Each table is read, but only the 
+                    longest history length table with a match on the current history/instruction will be read.
+                </p>
             </div>
             <div class="modalFooterDiv">
                 
