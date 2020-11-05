@@ -414,24 +414,26 @@
                 </p>
                 <center><img src="res/coin-megagraph.PNG" alt="MEGAGRAPH!" style="width:70%;"></center>
                 <p>
-                    This work began with some intial experiments on how to extract the knowledge from a corpus of X000 explanations.
-
+                    This work began with some intial experiments on how to extract the inference patterns from a corpus of thousands 
+                    of explanations. We experimented with a top down approach that connected the knowledge based on a simple lexical 
+                    overlap heuristic, on a subset of the full explanation corpus. 
+                    This created a graph, where the nodes represented a set of facts, and the edges were the lexical constraints on 
+                    the facts in their connected nodes. 
+                    An expert in knowledge representation then went in, merged the nodes and trimmed edges, creating a still large, 
+                    but much more legible graph of knowledge and inference.
                 </p>
                 <p>
-                    Synchronicity is a tool that allows annotators to generate a large dataset of inference patterns 
-                    from a corpus of semi-structured knowledge. The tool is web-based and runs in browser.
+                    I presented the results in Hong Kong in the COIN workshop at EMNLP. This methodology produced 67 patterns from 
+                    knowledge graph. The patterns were high quality, but this method was not scalable. This inspired us to instead
+                    use a bottum up approach.
                 </p>
-                <br>
                 <p>
-                    Key highlights of the project:
+                    The new approach involved automatically generating 100s of small low quality patterns and letting a trained 
+                    annotator build the patterns up from there. This required much more work to be put into the annotation interface,
+                    but resulted in a much larger yeild of 344 patterns. We no longer required a domain expert to annotate data, 
+                    and the annotation could become more fine grained.
                 </p>
-                <ul>
-                    <li>Back end server development</li>
-                    <li>Front end web development</li>
-                    <li>Foundational lessons in HCI</li>
-                    <li>Presenting on the idea to a conference (COIN workshop at EMNLP)</li>
-                    <li>2 publications on the project and its outcomes</li>
-                </ul>
+                <center><img src="res/lrec-tool.PNG" alt="LREC Tool" style="width:70%;"></center>
             </div>
             <div class="modalFooterDiv">
                 
@@ -445,7 +447,37 @@
                 <span id="project5BtnClose" class="modalCloseBtn">&times;</span>
             </div>
             <div class="modalMainDiv">
-
+                <p>
+                    This project was a semester long deep dive into traditional 
+                    Artifical Intelligence models in the domain of Berkeleys open 
+                    source pacman game. 
+                </p>
+                <p>
+                    The project began with classic search algorithms such as BFS, DFS, A*, and greedy search.
+                </p>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <img src="res/pacman-maze.png" alt="Clever Pacman AI is never lost." style="width: 30%;">
+                    <img src="res/pacman.png" alt="Pacman munching on some ghosts." style="width:52%;">
+                </div>
+                <p>
+                    After search algorithms we designed agents and tuned our evaluation functions for the pacman character. 
+                    Agents such as: 
+                </p>
+                <ul>
+                    <li>Reflex Agent</li>
+                    <li>Minimax(with alpha-beta pruning)</li>
+                    <li>Expectimax</li>
+                </ul>
+                <p>
+                    After traditional agents we moved on to reinforcement learning. 
+                    This involved designing a <b>Q-learning</b> agent that learned to play pacman very reliably.
+                </p>
+                <p>
+                    The last segment of the project involved handicapping pacman and having the agent hunt down ghosts blind.
+                    The agent recieved auditory information from the ghosts and reasoned based on the amplitude where the ghosts were.
+                    The ghosts had multiple agents that needed more complex models for optimum play as the ghost went from 
+                    random movement, to intentional dispersal.
+                </p>
             </div>
             <div class="modalFooterDiv">
                 
