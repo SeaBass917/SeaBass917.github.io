@@ -23,9 +23,6 @@ html,body{
 body > div{
     height: 100%;
 }
-img {
-    /* filter: brightness(.95) contrast(1.2); */
-}
 
 /*************
  * Side panel
@@ -84,8 +81,6 @@ div.tableofcontents{
 
 }
 .button {
-    font-size: 14pt;
-    font-variant: small-caps;
     font-weight: bold;
 
     margin: 5px;
@@ -111,6 +106,11 @@ div.tableofcontents{
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.1s ease-in-out 0s;
+}
+
+div.tableofcontents .button {
+    font-size: 14pt;
+    font-variant: small-caps;
 }
 
 .contactsbox{
@@ -264,7 +264,7 @@ div#skills{
     flex-wrap: wrap;
     justify-content: center;
 }
-div#skills p{
+.tagbox p{
     font-style: oblique;
     margin: 5px;
     border-radius: 15px;
@@ -287,6 +287,18 @@ div#skills p{
     border-width: 0px 5px;
     border-style: solid;
     border-color: #BB86FC;
+    /* background-color: #ab5be0; */
+}
+.tag3 p{
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #ff7417;
+    /* background-color: #ab5be0; */
+}
+.tag4 p{
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #2e54f0;
     /* background-color: #ab5be0; */
 }
 
@@ -321,7 +333,8 @@ div#education img{
 }
 @media screen and (max-width: 1500px){
     div#education table{
-        width: 95%;
+        width: 90%;
+        font-size: 12pt;
     }
     div#education{
         flex-direction: column;
@@ -331,6 +344,8 @@ div#education img{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 10px;
         width: 100%;
+    }
+    div#education img{
     }
 }
 
@@ -350,6 +365,9 @@ div#employment img{
 @media screen and (max-width: 1080px){
     div#employment img{
         display: none;
+    }
+    div#employment div{
+        text-align: left;
     }
 }
 div#employment p{
@@ -378,11 +396,10 @@ div.card{
     border-radius: 10px;
 
     background-color: #191C24;
-    border-bottom: 25px solid #191C24;
     margin: 10px;
 
     width: 300px;
-    height: 485px;
+    height: 350px;
 
     overflow: hidden;
     position: relative; 
@@ -391,15 +408,22 @@ div.card{
 div.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-div.card > img{
+div.card > .cardImgParent{
     width: 100%;
     height: 50%;
+    padding: 0px;
+    overflow: hidden;
+}
+div.card img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all 1s ease-in-out 0s;
 }
 div.card:hover img {
-    height: 10%;
+    transform: scale(1.6);
     transition: all 0.25s ease-in-out 0s;
 }
 div.card > div{
@@ -407,7 +431,7 @@ div.card > div{
     height: 50%;
 }
 div.card p{
-    margin: 0px;
+    font-size: 12pt;
 }
 div.card h2{
     margin: 0px;
@@ -416,11 +440,14 @@ div.card h4{
     margin: 0px 0px 10px 0px;
 }
 div.card .button{
-    color: white;
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     bottom: -50px;
     transition: all 1s ease-in-out 0s;
+
+    background-color: #1D1D1D;
+    border: 10px solid #1D1D1D;
+    box-shadow: 4px 18px rgba(0,0,0,0.4);
 }
 @media screen and (max-width: 982px){
     div.card{
@@ -429,13 +456,9 @@ div.card .button{
         border-bottom: 25px solid #191C24;
         margin: 10px;
     
-        width: 200px;
+        /* width: 200px; */
+        width: 680px;
         height: 324px;
-    }
-    div.card .button{
-        background-color: #1D1D1D;
-        border: 10px solid #1D1D1D;
-        box-shadow: 4px 18px rgba(0,0,0,0.4);
     }
 }
 div.card:hover .button {
@@ -444,11 +467,11 @@ div.card:hover .button {
 }
 
 #publications div.card{
-    cursor: auto;
     width: 680px;
+    height: 400px;
 }
 
-/* The Modal (background) */
+/* The Modal Boxes */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -461,8 +484,9 @@ div.card:hover .button {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-/* Modal Content/Box */
+.modal::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 .modal-content {
     background-color: #090B10;
     margin: 1% auto; /* 15% from the top and centered */
@@ -470,13 +494,11 @@ div.card:hover .button {
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
 }
-
 .modalTitleDiv {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .modalCloseBtn {
     color: #aaa;
     float: right;
@@ -488,4 +510,8 @@ div.card:hover .button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.modal-content .button{
+    color: white;
+    font-style: normal;
 }

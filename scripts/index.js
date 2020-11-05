@@ -11,7 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let projectNames = []
     for (let projectCard of projectCards){
         projectNames.push(projectCard.id)
-
+    }
+    // Dynamically determine what projects are in the publications section
+    let pubCards = document.getElementById("publications").getElementsByClassName("cardbox")[0].children
+    for (let pubCard of pubCards){
+        projectNames.push(pubCard.id)
     }
 
     // Set up the button listeners on each modal
