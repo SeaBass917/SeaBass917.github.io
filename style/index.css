@@ -19,6 +19,7 @@ html,body{
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    /* font-variant: small-caps; */
 }
 body > div{
     height: 100%;
@@ -479,6 +480,11 @@ div.card:hover .button {
 #publications div.card{
     width: 680px;
     height: 400px;
+}
+@media screen and (max-width: 580px){
+    #publications div.card{
+        height: 450px;
+    }
 }
 
 /* The Modal Boxes */
