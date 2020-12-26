@@ -1,0 +1,84 @@
+html,
+body {
+    background-color: #161616;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.rings {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.outer-glow {
+    height: 380px;
+    width: 380px;
+    background-image: linear-gradient(45deg,
+        #5A809E 0%, 
+        #F57D7C 50%, 
+        #FFC1A6 100%
+    );
+
+    filter: blur(40px) brightness(0.7);
+
+    /*  Rotate  */
+    -webkit-animation: rotating 1s linear infinite;
+}
+
+.outer-ring {
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(45deg,
+        #5A809E 0%, 
+        #F57D7C 50%, 
+        #FFC1A6 100%
+    );
+
+    /*  Rotate  */
+    -webkit-animation: rotating 1s linear infinite;
+}
+
+.inner-ring {
+    height: 260px;
+    width: 260px;
+    background-color: #161616;
+}
+
+.inner-drop {
+    height: 260px;
+    width: 260px;
+    background-color: #161616;
+
+    /*  Drop  */
+    filter: brightness(1.2);
+    -webkit-animation: droplet 1.5s infinite;
+}
+
+@-webkit-keyframes droplet {
+    from{
+        -webkit-transform: scale(0.0);
+    }
+    to{
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
