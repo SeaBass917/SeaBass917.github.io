@@ -365,13 +365,24 @@ div#employment{
     justify-content: space-between;
     border-radius: 10px;
     text-align: right;
+    justify-content: end;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 div#employment img{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 400px;
+}
+div#employment img#job1Img{
+    height: 300px;
     width: 210px;
-    object-fit: cover;
+    object-fit:cover;
+}
+div#employment img#job2Img{
+    height: 300px;
+    width: 210px;
+    object-fit: contain;
+    background-color: white;
 }
 @media screen and (max-width: 1080px){
     div#employment img{
@@ -394,6 +405,18 @@ div#employment p#jobtimeline{
 }
 div#employment p#jobdescription{
     margin: 35px 25px 10px 25px;
+}
+
+div.jobCard {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px;
+}
+div .jobCard:nth-last-child(1){
+    margin: 30px 0px 0px;
+}
+div.jobCard > div {
+    max-width: 900px;
 }
 
 .cardbox{
