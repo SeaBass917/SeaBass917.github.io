@@ -537,9 +537,9 @@ div.card:hover .button {
     width: 50%; /* Could be more or less, depending on screen size */
 }
 /* Modal Animation */
-.hideModal{
-    z-index:-1;
-    opacity:0;
+.hideModal {
+    z-index: -1;
+    opacity: 0;
     animation: hide .25s;
   
     transform: scale(0);
@@ -554,7 +554,7 @@ div.card:hover .button {
         opacity: 0;
     }
 }
-.showModal{
+.showModal {
     opacity:1;
     z-index:2;
     animation: show .2s;
