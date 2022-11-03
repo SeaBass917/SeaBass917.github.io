@@ -17,7 +17,7 @@ html,body{
     height: 100%;
     width: 100%;
     display: flex;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     /* font-variant: small-caps; */
 }
@@ -206,7 +206,7 @@ div#about p{
     font-size: 26pt;
 }
 div#about ul{
-    font-weight: bold;
+    /* font-weight: bold; */
     list-style-type: square;
     
     margin: 0px 10px;
@@ -214,6 +214,9 @@ div#about ul{
 }
 div#about ul p{
     margin: 0px;
+}
+div#aboutTextContainer{
+    padding: 30px;
 }
 @media screen and (max-width: 1535px){
     div#aboutTextContainer{

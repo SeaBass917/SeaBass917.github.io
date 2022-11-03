@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="res/favicon.png">
-
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    
     <script src="scripts/index.js"></script>
 
 </head>
@@ -18,7 +19,7 @@
 <body>
 
     <div class="sidepanel">
-        <img src="res/me-closer-flip.jpeg" alt="Image of Sebastian Thiem" class="pfp">
+        <img src="res/me-3.jpg" alt="Image of Sebastian Thiem" class="pfp">
 
         <div class="namecard">
             <h2>Sebastian Thiem</h2>
@@ -65,8 +66,8 @@
                     <div>
                         <!-- <h1>About Me </h1> -->
                         <p>
-                            My name is Sebastian. I am an up and coming engineer with a solid foundation 
-                            in software development and a passion for pushing technology to the next level.
+                            My name is Sebastian. I am an engineer, early in his career, with a solid foundation 
+                            in software development and a passion for growing teams that push technology to the next level.
                         </p>
                     </div>
                     <ul>
@@ -88,7 +89,9 @@
                     <div class="tagbox tag0">
                         <p>Leadership</p>
                         <p>Research</p>
+                        <p>Control Systems Software</p>
                         <p>Web/App Development</p>
+                        <p>Public Speaking</p>
                         <p>Embedded Devices</p>
                         <p>DSP</p>
                         <p>FPGA</p>
@@ -100,13 +103,13 @@
                     <div class="tagbox tag1">
                         <p>C++</p>
                         <p>Python</p>
-                        <p>C</p>
                         <p>Bash</p>
                         <p>JavaScript</p>
+                        <p>Dart</p>
+                        <p>C</p>
                         <p>C#</p>
                         <p>Scala</p>
                         <p>Verilog</p>
-                        <p>Dart</p>
                         <p>MATLAB</p>
                         <p>Assembly</p>
                     </div>
@@ -116,10 +119,10 @@
                     <!-- <h3>Environments</h3> -->
                     <div class="tagbox tag2">
                         <p>Linux</p>
+                        <p>Node.JS</p>
                         <p>CUDA</p>
                         <p>Arduino</p>
                         <p>Raspberry Pi</p>
-                        <p>Node.JS</p>
                         <p>OpenMP</p>
                         <p>Docker</p>
                         <p>Tensorflow</p>
@@ -197,6 +200,23 @@
             <div id="projects">
                 <h1>Projects</h1>
                 <div class="cardbox">
+                    <div id="project8" class="card">
+                        <div class="cardImgParent">
+                            <img src="res/GTFT-RT-visualizer.gif" alt="Google Transit Realtime Visualization app.">
+                        </div>
+                        <div>
+                            <h2>Google Transit Realtime Feed Visualizer</h2>
+                            <h4>2022</h4>
+                            <div class="tagbox tag4">
+                                <p>Google Maps API</p>
+                                <p>Web Tool</p>
+                                <p>Transit</p>
+                                <p>JQuery</p>
+                                <p>REST</p>
+                            </div>
+                            <a id="project8Btn" class="button">Click to expand...</a>
+                        </div>
+                    </div>
                     <div id="project7" class="card">
                         <div class="cardImgParent">
                             <img src="res/wordseg.png" alt="Segmented Words">
@@ -375,6 +395,33 @@
         </div>
     </div>
 
+    <div id="project8Modal" class="modal hideModal">
+        <div class="modal-content">
+            <div class="modalTitleDiv">
+                <h2>Google Transit Realtime Feed Visualizer</h2>
+                <span id="project8BtnClose" class="modalCloseBtn">&times;</span>
+            </div>
+            <div class="modalMainDiv">
+                <p>
+                    This tool allows developers who are working on the Google Transit API, to visualize the realtime data feed.
+                </p>
+                <p>
+                    In a production system, testing Google Transit Realtime data feeds can be tricky, since there can be hundreds 
+                    of values to verify. All of which are updating in <em>real time</em>, and many of which are complex locations/times.
+                </p>
+                <p>
+                    Using this tool, a development team can locally verify the behavior of their real time data feeds in simulation,
+                    before anything goes out to the field.
+                </p>
+                <img src="res/GTFT-RT-visualizer.gif" alt="Google Transit Realtime Visualization app." style="width: 85%;">
+                <p>
+                    Project can be accessed from this repository:<a href="https://github.com/SeaBass917/google-transit-rt-feed-viewer" class="button"><i class="fab fa-github"></i>github</a>
+                </p>
+            </div>
+            <div class="modalFooterDiv">
+            </div>
+        </div>
+    </div>
     <div id="project7Modal" class="modal hideModal">
         <div class="modal-content">
             <div class="modalTitleDiv">
@@ -386,6 +433,8 @@
                     This project will be building some of the necessary image analysis foundations to interpret and 
                     transmit grocery lists from a board to your phone. These foundations include the following operations 
                     on hand-written phrases: character segmentation, word/phrase segmentation, and character recognition.
+                </p>
+                <p>
                     Project can be accessed from this repository:<a href="https://github.com/SeaBass917/glocr" class="button"><i class="fab fa-github"></i>github</a>
                 </p>
                 <h3>Phase I (Word Segmentation)</h3>
