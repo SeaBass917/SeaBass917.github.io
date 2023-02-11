@@ -66,16 +66,16 @@
                     <div>
                         <!-- <h1>About Me </h1> -->
                         <p>
-                            My name is Sebastian. I am an engineer, early in his career, with a solid foundation 
-                            in software development and a passion for growing teams that push technology to the next level.
+                            My name is Sebastian. Software Engineer, Scrum Master, and Team Lead. 
+                            I have a passion for growing teams that push technology to the next level.
                         </p>
                     </div>
                     <ul>
-                        <li><p>Quick study</p></li>
-                        <li><p>Unbreakable work ethic</p></li>
-                        <li><p>Attention to detail</p></li>
-                        <li><p>Never afraid to ask questions</p></li>
                         <li><p>Broad skill set</p></li>
+                        <li><p>Team oriented</p></li>
+                        <li><p>Customer focused</p></li>
+                        <li><p>Strive for excellence</p></li>
+                        <li><p>Leading orginization growth</p></li>
                         <!-- <li>A good sense of the things I know and the things I know I don't know</li> -->
                     </ul>
                 </div>
@@ -170,11 +170,14 @@
                             <p id="jobtitle">Software Engineer | Engagement Leader -- IQ Inc</p>
                             <p id="jobtimeline">January 2021 - present</p>
                             <p id="jobdescription">
-                                ScrumMaster to an agile team of 4 other engineers. The team works on safety-critical control systems for trains all across the globe.
-                                Primarily worked in C++/Python.
-                                IQ is in the business of software consultancy, so my work will occasionally dip into other projects (e.g. UI/UX work for Medical Devices).
-                                Part of my time is dedicated to an Engagement Leader role. In this role we coach and support 3-6 other engineers. We are a
-                                point of contact for performance&nbsp;reviews; career questions; training opportunities; or anything else they need from the company.
+                                <b>ScrumMaster</b> and <b>Technical Lead</b> to multiple <b>agile</b> teams of 7+ engineers. 
+                                The teams worked on <b>safety-critical C++/Python control systems</b> for trains 
+                                all across the globe. Served a pivotal role on the project, 
+                                getting hands-on experience: <b>working with customers</b>, <b>interpreting formal requirements</b>, 
+                                <b>backlog refinement</b>, reviewing <b>test designs</b>, <b>implementing software</b>, and <b>onboarding</b> 
+                                new team members. Supported <b>Medical Device</b> projects with my experience in <b>UI/UX</b>.
+                                Served as an <b>Engagement Leader</b>. In this role we <b>coach</b> and support 3-6 other engineers. 
+                                We are a point of contact for <b>performance reviews</b>; <b>career questions</b>; and <b>training</b> opportunities.
                             </p>
                         </div>
                         <img id="job2Img" src="res/SE59967_logo_orig.jpg" alt="IQ Inc logo">
@@ -184,10 +187,9 @@
                             <p id="jobtitle">Research Assistant -- University of Arizona</p>
                             <p id="jobtimeline">June 2019 - June 2020</p>
                             <p id="jobdescription">
-                                The lab’s goal was to design and implement algorithms for automatically constructing human readable explanations to 
-                                science exam questions. My work involved designing an interactive web-tool for annotating a large dataset of explanatory 
-                                patterns based on a corpus of full explanations to science questions. Annotators then used the tool, and from the dataset they 
-                                generated, we created a model that would produce human readable explanations.
+                                The lab's goal was to <b>design</b> and <b>implement algorithms</b> for automatically constructing <b>human readable explanations</b> to science exam questions.
+                                I designed an <b>interactive web-tool</b> that utilized a <b>corpus</b> of rich explanations to enable the annotation of a <b>large dataset</b> of inference patterns.
+                                I then used those patterns to create a <b>model</b> that <b>produced human readable explanations</b> using a combination of <b>general AI</b> and traditional <b>ML techniques</b>.
                             </p>
                         </div>
                         <img id="job1Img" src="res/spock-lab.jpg" alt="Spock">
@@ -384,7 +386,7 @@
                                 <p>AI Research</p>
                                 <p>NLP</p>
                                 <p>UI Design</p>
-                                <p>Invited To Speak</p>
+                                <p>Technical Public Speaking</p>
                                 <p>Symbolic AI</p>
                             </div>
                             <a id="pub0Btn" class="button">Click to expand...</a>
@@ -430,7 +432,7 @@
             </div>
             <div class="modalMainDiv">
                 <p>
-                    This project will be building some of the necessary image analysis foundations to interpret and 
+                    This project built some of the necessary image analysis foundations to interpret and 
                     transmit grocery lists from a board to your phone. These foundations include the following operations 
                     on hand-written phrases: character segmentation, word/phrase segmentation, and character recognition.
                 </p>
@@ -439,24 +441,21 @@
                 </p>
                 <h3>Phase I (Word Segmentation)</h3>
                 <p>
-                    Using the “documents” portion of the IAM database (see Figure 1) an algorithm will be constructed that takes 
-                    in a handwritten document and outputs the sentences and words as image files. Word segmentation is the critical 
-                    part here, but for analysis purposes it would be productive to output the line segmentation step. There will also 
-                    be some pre-processing involved including but not limited to: isolating the written text from the full document and 
+                    Using the “documents” portion of the IAM database (see Figure 1) the algorithm takes 
+                    in a handwritten document and outputs the sentences and words as image files. There was some pre-processing involved including but not limited to: isolating the written text from the full document and 
                     noise reduction.
                 </p>
                 <center><img src="res/wordseg.png" alt="Segmented Words" style="width: 50%;"></center>
-                <h3>Phase II (Character Segmentation) (Current Phase)</h3>
+                <h3>Phase II (Character Segmentation)</h3>
                 <p>
-                    The goal of this phase is to segment handwritten words into its character components. This will be tested on the 
+                    This phase segmented handwritten words into their character components. This will be tested on the 
                     “words” subsection of the IAM database (see Figure 3) and the resulting images from Phase I. Once provided an image 
                     of a word this algorithm will produce an ordered list of images for each of the characters in the word.
                 </p>
-                <h3>Phase III (Character Recognition)</h3>
+                <h3>Phase III (Character Recognition) (Current Phase)</h3>
                 <p>
                     Character recognition is often done using pretrained and heavy deep neural nets. Such nets are compute intensive 
-                    and would not fit the scope of this project, since ideally this would be run on an embedded device. For that reason 
-                    this phase will involved a simple algorithm. This would be trained on EMNIST dataset or a derivative of this dataset.
+                    and since ideally this would be run on an embedded device, I chose to explore more traditional OCR technicques for character recognition. Trained on EMNIST dataset or a derivative of this dataset.
                 </p>
             </div>
             <div class="modalFooterDiv">

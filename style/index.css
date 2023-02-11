@@ -195,7 +195,7 @@ div#about{
 }
 div#about img{
     width: 50%;
-    height: 450px;
+    height: 496px;
     object-fit: cover;
 
     border-bottom-left-radius: 10px;
@@ -218,6 +218,9 @@ div#about ul p{
 div#aboutTextContainer{
     padding: 30px;
 }
+div#aboutTextContainer li {
+    padding: 5px;
+}
 @media screen and (max-width: 1535px){
     div#aboutTextContainer{
         display: flex;
@@ -235,7 +238,7 @@ div#aboutTextContainer{
     }
     div#about img{
         width: 30%;
-        height: 230px;
+        height: 305px;
     }
 }
 @media screen and (max-width: 1200px){
@@ -277,6 +280,7 @@ div#skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .tagbox p{
     font-style: oblique;
