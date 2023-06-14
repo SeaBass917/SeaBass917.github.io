@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // ----------------------------------------------
 
     // Dynamically determine what projects are in the projects section
-    let projectCards = document.getElementById("projects").getElementsByClassName("cardbox")[0].children
-    let projectNames = []
+    let projectCards = document.getElementById("projects").getElementsByClassName("cardbox")[0].children;
+    let projectNames = [];
     for (let projectCard of projectCards){
-        projectNames.push(projectCard.id)
+        projectNames.push(projectCard.id);
     }
     // Dynamically determine what projects are in the publications section
-    let pubCards = document.getElementById("publications").getElementsByClassName("cardbox")[0].children
+    let pubCards = document.getElementById("publications").getElementsByClassName("cardbox")[0].children;
     for (let pubCard of pubCards){
-        projectNames.push(pubCard.id)
+        projectNames.push(pubCard.id);
     }
     // Dynamically determine what projects are in the publications section
-    let presiCards = document.getElementById("presentations").getElementsByClassName("cardbox")[0].children
+    let presiCards = document.getElementById("presentations").getElementsByClassName("cardbox")[0].children;
     for (let presiCard of presiCards){
-        projectNames.push(presiCard.id)
+        projectNames.push(presiCard.id);
     }
 
     // Set up the button listeners on each modal
