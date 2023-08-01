@@ -172,6 +172,7 @@ div#main > div{
     border: 5px solid #191C24;
     margin: 25px;
     border-radius: 15px;
+    background-color: #1b1e29;
     /* padding: 5px; */
 }
 div#main > div#home{
