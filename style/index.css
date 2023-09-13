@@ -1,4 +1,3 @@
-
 /*
     NOTE:
 
@@ -12,7 +11,8 @@
     border-width: top right bot left;
 */
 
-html,body{
+html,
+body {
     margin: 0px;
     height: 100%;
     width: 100%;
@@ -21,7 +21,8 @@ html,body{
     color: white;
     /* font-variant: small-caps; */
 }
-body > div{
+
+body>div {
     height: 100%;
 }
 
@@ -35,25 +36,27 @@ div.sidepanel {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 280px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
     border-right: 2px solid rgba(0, 0, 0, 0.15);
 }
-@media screen and (max-width: 710px){
+
+@media screen and (max-width: 710px) {
     div.sidepanel {
         display: none;
     }
 }
+
 div.sidepanel p,
 div.sidepanel a,
-div.sidepanel h2{
+div.sidepanel h2 {
     color: white;
 }
 
-img.pfp{
+img.pfp {
     border-radius: 50%;
     width: 150px;
     margin: 50px 35px 30px 35px;
@@ -61,26 +64,29 @@ img.pfp{
     box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-div.namecard{
+div.namecard {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 25px;
 }
-div.namecard>*{
+
+div.namecard>* {
     margin: 0;
     font-style: oblique;
 }
-div.namecard>h2{
+
+div.namecard>h2 {
     font-size: 18pt;
 }
 
-div.tableofcontents{
+div.tableofcontents {
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 180px;
 
 }
+
 .button {
     font-weight: bold;
 
@@ -89,13 +95,16 @@ div.tableofcontents{
     text-decoration: none;
     position: relative;
 }
+
 .button:hover {
     color: #4076f5;
 }
+
 .button:hover::before {
     visibility: visible;
     transform: scaleX(1);
 }
+
 .button::before {
     content: "";
     position: absolute;
@@ -114,7 +123,7 @@ div.tableofcontents .button {
     font-variant: small-caps;
 }
 
-.contactsbox{
+.contactsbox {
     margin: 20px;
     width: 180px;
     bottom: 35px;
@@ -122,33 +131,39 @@ div.tableofcontents .button {
     display: flex;
     justify-content: center;
 }
-.contactsbox p{
+
+.contactsbox p {
     margin: 0px 10px;
 }
-.contactsbox p,i{
+
+.contactsbox p,
+i {
     font-weight: bold;
     font-size: 16px;
 }
-.contactsbox a{
+
+.contactsbox a {
     margin: 10px 0px;
     text-decoration: none;
     display: flex;
     align-items: center;
 }
-div.sidepanel a.githublink{
+
+div.sidepanel a.githublink {
     color: #551A8B;
 }
-div.sidepanel a.linkedinlink{
+
+div.sidepanel a.linkedinlink {
     color: #0073B1;
 }
 
-footer{
+footer {
     font-size: 9pt;
     font-style: italic;
     text-align: center;
     color: #525252;
     margin: 20px;
-    
+
     position: absolute;
     bottom: 0px;
 }
@@ -164,23 +179,27 @@ div#main {
     overflow: scroll;
     scroll-behavior: smooth;
 }
-div#main::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+
+div#main::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
-div#main > div{
+div#main>div {
     border: 5px solid #191C24;
     margin: 25px;
     border-radius: 15px;
     background-color: #1b1e29;
     /* padding: 5px; */
 }
-div#main > div#home{
+
+div#main>div#home {
     margin: 0px;
     border: 0px;
     border-radius: 0px;
 }
-div#main h1{
+
+div#main h1 {
     margin: 25px;
 }
 
@@ -189,12 +208,13 @@ div#home img {
     object-fit: cover;
 }
 
-div#about{
+div#about {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
 }
-div#about img{
+
+div#about img {
     width: 50%;
     height: 496px;
     object-fit: cover;
@@ -202,88 +222,106 @@ div#about img{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
-div#about p{
+
+div#about p {
     margin: 25px;
     font-size: 26pt;
 }
-div#about ul{
+
+div#about ul {
     /* font-weight: bold; */
     list-style-type: square;
-    
+
     margin: 0px 10px;
     font-size: 26pt;
 }
-div#about ul p{
+
+div#about ul p {
     margin: 0px;
 }
-div#aboutTextContainer{
+
+div#aboutTextContainer {
     padding: 30px;
 }
+
 div#aboutTextContainer li {
     padding: 5px;
 }
-@media screen and (max-width: 1535px){
-    div#aboutTextContainer{
+
+@media screen and (max-width: 1535px) {
+    div#aboutTextContainer {
         display: flex;
         align-items: center;
     }
-    div#aboutTextContainer > div{
+
+    div#aboutTextContainer>div {
         width: 330px;
     }
-    div#about ul{
+
+    div#about ul {
         margin: 25px;
         font-size: 16pt;
     }
-    div#about p{
+
+    div#about p {
         font-size: 16pt;
     }
-    div#about img{
+
+    div#about img {
         width: 30%;
         height: 305px;
     }
 }
-@media screen and (max-width: 1200px){
-    div#about img{
+
+@media screen and (max-width: 1200px) {
+    div#about img {
         display: none;
     }
 }
-@media screen and (max-width: 850px){
+
+@media screen and (max-width: 850px) {
     div#about {
         text-align: center;
     }
-    div#aboutTextContainer{
+
+    div#aboutTextContainer {
         flex-direction: column;
     }
-    div#about{
+
+    div#about {
         justify-content: center;
     }
-    div#about ul{
+
+    div#about ul {
         list-style-type: none;
-        
+
         margin: 0px 0px 25px 0px;
         padding: 0px 0px;
     }
 }
 
-div#skills{
+div#skills {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-evenly;
     border-radius: 10px;
     padding: 25px;
 }
-@media screen and (max-width: 1550px){
-    div#skills{
+
+@media screen and (max-width: 1550px) {
+    div#skills {
         flex-wrap: wrap;
     }
 }
-.tagbox{
+
+.tagbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.tagbox p{
+
+.tagbox p {
     font-style: oblique;
     margin: 5px;
     border-radius: 15px;
@@ -292,83 +330,96 @@ div#skills{
     font-size: 16pt;
     font-weight: bold;
 }
-.tag0 p{
+
+.tag0 p {
     border-width: 0px 5px;
     border-style: solid;
-    border-color:  #3CDAC6;
+    border-color: #3CDAC6;
 }
-.tag1 p{
+
+.tag1 p {
     border-width: 0px 5px;
     border-style: solid;
     border-color: #4CAF50;
 }
-.tag2 p{
+
+.tag2 p {
     border-width: 0px 5px;
     border-style: solid;
     border-color: #BB86FC;
     /* background-color: #ab5be0; */
 }
-.tag3 p{
+
+.tag3 p {
     border-width: 0px 5px;
     border-style: solid;
     border-color: #ff7417;
     /* background-color: #ab5be0; */
 }
-.tag4 p{
+
+.tag4 p {
     border-width: 0px 5px;
     border-style: solid;
     border-color: #2e54f0;
     /* background-color: #ab5be0; */
 }
 
-div#education{
+div#education {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
 }
-div#education table{
+
+div#education table {
     margin: 25px;
     font-style: oblique;
     font-size: 20px;
     width: 100%;
 }
-div#education tr td:nth-child(1){
+
+div#education tr td:nth-child(1) {
     min-width: 80px;
 }
-div#education tr td:nth-child(3){
+
+div#education tr td:nth-child(3) {
     min-width: 40px;
 }
-div#education{
+
+div#education {
     display: flex;
     flex-direction: row;
 }
-div#education img{
+
+div#education img {
     border-bottom-left-radius: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 630px;
     object-fit: fill;
 }
-@media screen and (max-width: 1500px){
-    div#education table{
+
+@media screen and (max-width: 1500px) {
+    div#education table {
         width: 90%;
         font-size: 12pt;
     }
-    div#education{
+
+    div#education {
         flex-direction: column;
     }
-    div#education img{
+
+    div#education img {
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 10px;
         width: 100%;
     }
-    div#education img{
-    }
+
+    div#education img {}
 }
 
-div#employment{
+div#employment {
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
@@ -377,41 +428,50 @@ div#employment{
     align-content: flex-end;
     align-items: flex-end;
 }
-div#employment img{
+
+div#employment img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-div#employment img#job1Img{
+
+div#employment img#job1Img {
     height: 300px;
     width: 210px;
-    object-fit:cover;
+    object-fit: cover;
 }
-div#employment img#job2Img{
+
+div#employment img#job2Img {
     height: 300px;
     width: 210px;
     object-fit: contain;
     background-color: white;
 }
-@media screen and (max-width: 1080px){
-    div#employment img{
+
+@media screen and (max-width: 1080px) {
+    div#employment img {
         display: none;
     }
-    div#employment div{
+
+    div#employment div {
         text-align: left;
     }
 }
-div#employment p{
+
+div#employment p {
     font-size: 20px;
     margin: 0px 25px 10px 25px;
 }
-div#employment p#jobtitle{
+
+div#employment p#jobtitle {
     font-weight: bold;
     font-style: oblique;
 }
-div#employment p#jobtimeline{
+
+div#employment p#jobtimeline {
     font-style: oblique;
 }
-div#employment p#jobdescription{
+
+div#employment p#jobdescription {
     margin: 35px 25px 10px 25px;
 }
 
@@ -420,20 +480,23 @@ div.jobCard {
     flex-direction: row;
     margin: 30px 0px;
 }
-div .jobCard:nth-last-child(1){
+
+div .jobCard:nth-last-child(1) {
     margin: 30px 0px 0px;
 }
-div.jobCard > div {
+
+div.jobCard>div {
     max-width: 900px;
 }
 
-.cardbox{
+.cardbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-div.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 10px;
 
@@ -444,19 +507,23 @@ div.card{
     height: 350px;
 
     overflow: hidden;
-    position: relative; 
+    position: relative;
     cursor: pointer;
 }
+
 div.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-div.card > .cardImgParent{
+
+div.card>.cardImgParent {
     width: 100%;
     height: 50%;
     padding: 0px;
     overflow: hidden;
 }
-div.card img{
+
+div.card img,
+div.card video {
     width: 100%;
     height: 100%;
     vertical-align: middle;
@@ -464,24 +531,31 @@ div.card img{
     border-radius: 10px 10px 0 0;
     transition: all 1s ease-in-out 0s;
 }
-div.card:hover img {
+
+div.card:hover img,
+div.card:hover video {
     transform: scale(1.6);
     transition: all 0.25s ease-in-out 0s;
 }
-div.card > div{
+
+div.card>div {
     padding: 10px;
     height: 50%;
 }
-div.card p{
+
+div.card p {
     font-size: 12pt;
 }
-div.card h2{
+
+div.card h2 {
     margin: 0px;
 }
-div.card h4{
+
+div.card h4 {
     margin: 0px 0px 10px 0px;
 }
-div.card .button{
+
+div.card .button {
     font-size: 12px;
     position: absolute;
     bottom: -50px;
@@ -489,112 +563,140 @@ div.card .button{
 
     background-color: #1D1D1D;
     border: 10px solid #1D1D1D;
-    box-shadow: 4px 18px rgba(0,0,0,0.4);
+    box-shadow: 4px 18px rgba(0, 0, 0, 0.4);
 }
-@media screen and (max-width: 982px){
-    div.card{
-    
+
+@media screen and (max-width: 982px) {
+    div.card {
+
         background-color: #191C24;
         border-bottom: 25px solid #191C24;
         margin: 10px;
-    
+
         /* width: 200px; */
         width: 680px;
         height: 324px;
     }
 }
+
 div.card:hover .button {
     bottom: 0px;
     transition: all 0.25s ease-in-out 0s;
 }
 
-#publications div.card{
+#publications div.card {
     width: 680px;
     height: 400px;
 }
-@media screen and (max-width: 580px){
-    #publications div.card{
+
+@media screen and (max-width: 580px) {
+    #publications div.card {
         height: 450px;
     }
 }
 
 /* The Modal Boxes */
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
-	transition: all 0.5s;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black w/ opacity */
+    transition: all 0.5s;
 }
-.modal::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+
+.modal::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
+
 .modal-content {
     background-color: #090B10;
-    margin: 1% auto; /* 15% from the top and centered */
+    margin: 1% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 50%;
+    /* Could be more or less, depending on screen size */
 }
+
 /* Modal Animation */
 .hideModal {
     z-index: -1;
     opacity: 0;
     animation: hide .25s;
-  
+
     transform: scale(0);
-}@keyframes hide {
-    from{
-        z-index:2;
+}
+
+@keyframes hide {
+    from {
+        z-index: 2;
         transform: scale(1);
-        opacity:1;
-    } to{
-        z-index:-1;
+        opacity: 1;
+    }
+
+    to {
+        z-index: -1;
         transform: scale(0);
         opacity: 0;
     }
 }
+
 .showModal {
-    opacity:1;
-    z-index:2;
+    opacity: 1;
+    z-index: 2;
     animation: show .2s;
 
     transform: scale(1);
 }
+
 @keyframes show {
-    from{
+    from {
         transform: scale(0);
-        opacity:0;
-        z-index:-1;
-    } to{
+        opacity: 0;
+        z-index: -1;
+    }
+
+    to {
         transform: scale(1);
         opacity: 1;
-        z-index:2;
+        z-index: 2;
     }
 }
+
 .modalTitleDiv {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .modalCloseBtn {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .modalCloseBtn:hover,
 .modalCloseBtn:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
-.modal-content .button{
+
+.modal-content .button {
     color: white;
     font-style: normal;
 }

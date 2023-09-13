@@ -236,7 +236,7 @@
                 <div class="cardbox">
                     <div id="project9" class="card">
                         <div class="cardImgParent">
-                            <video width="300" autoplay="autoplay">
+                            <video style="width: 100%;" autoplay="autoplay">
                                 <source src="res/lux-video-demo.mp4" alt="Lux Flutter application, Videos tab."
                                     type="video/mp4" />
                             </video>
@@ -516,6 +516,15 @@
                     This is a multi-year independent passion project
                     that is still in progress as of today.
                 </p>
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>Flutter Frontend</li>
+                    <li>Node.JS Backend</li>
+                    <li>MongoDB</li>
+                    <li>Docker</li>
+                    <li>Python/Bash Scripting</li>
+                    <li>TrueNAS Storage</li>
+                </ul>
                 <h3>Project Goals</h3>
                 <p>
                     To create a fully automated system that allows users to
@@ -529,7 +538,7 @@
                 </p>
                 <p>
                     When I am done here this will be an end-to-end software solution,
-                    that can create a user's own personal digital library from their physical media.
+                    that can be used to build a user's own personal digital library from their physical media.
                 </p>
                 <h3>Latest Updates</h3>
                 <h4>Manga Reader</h4>
@@ -541,9 +550,29 @@
                     <div style="padding-left: 32px;">
                         <p>
                             This project began by focusing efforts on the Manga Reading functionality.
+                            This feature is fully functional, and at this point the only things it needs
+                            are more UX improvements.
                         </p>
                         <p>
-                            ...
+                            The manga homepage takes you straight to your library.
+                            This library can be filtered using a search bar above.
+                        </p>
+                        <p>
+                            After clicking on a selection you are taken to an info page.
+                            This top of this page has all the info regarding the manga,
+                            and the bottom can be used to browse the chapters.
+                        </p>
+                        <p>
+                            Select a chapter, and you're taken to the manga viewer.
+                        </p>
+                        <p>
+                            Up next for this category of data:
+                        <ul>
+                            <li>Include media tags data in info and implement search by tag.</li>
+                            <li>Implement sorting algorithms (Alphabetical norm/reverse, date added norm/reverse,
+                                etc...)</li>
+                            <li>Page jumper in the manga viewer.</li>
+                        </ul>
                         </p>
                     </div>
                 </div>
@@ -559,15 +588,56 @@
                             them.
                         </p>
                         <p>
-                            .
+                            The design for the video library had originally been built to mirror the patterns on the
+                            manga tab.
+                            This was for consistency and simplification.
+                            However video and manga consumption have different desired user experiences.
+                            I felt a more vibrant UI was called for here.
+                        </p>
+                        <p>
+                            Up next for this category of data:
+                        <ul>
+                            <li>Implement search by tag.</li>
+                            <li>Implement sorting algorithms (Alphabetical norm/reverse, date added norm/reverse,
+                                etc...)</li>
+                            <li>Update video player page to new UI design (it is currently using the flat color design).
+                            </li>
+                        </ul>
                         </p>
                     </div>
                 </div>
                 <h4>Metadata Acquisition & Management</h4>
-                <p>...</p>
+                <p>
+                    With media, comes media metadata.
+                    The data about the media such as publisher, genre tags, or description.
+                </p>
+                <p>
+                    This project uses MongoDB to manage the media metadata.
+                    A headless server is running a custom configured mongoDB docker container.
+                    The database itself is stored on a separate dedicated storage server.
+                </p>
+                <p>
+                    The acquisition of all this data has been automated.
+                    As soon as the headless server detects new media added to one of the dedicated media folders,
+                    I have a library of python scripts that pull data from online information databases.
+                </p>
+                <p>
+                    Currently this is done using html parsing on specific configured websites.
+                    In the future I would like to identify any existing APIs for this kind of data.
+                    If there are not any, build more support for automated web crawling, and consider publishing my own.
+                    (By the very nature of this project I already have an API for metadata built and hosted locally,
+                    so it would really just be a matter of data volume and hosting the DB on a production cloud server).
+                </p>
                 <img src="res/MongoDB-demo.png" alt="MongoDB compass." style="width: 90%;">
                 <h4>Storage Solution</h4>
-                <p>...</p>
+                <p>
+                    All the storage is done in-house on a dedicated TrueNAS storage server.
+                </p>
+                <p>
+                    TrueNAS has a fantastic interface for setting up and managing redundant disk arrays without much
+                    hassle.
+                    I highly recommend it to others who want an at home storage solution.
+                </p>
                 <img src="res/TrueNAS-demo.png" alt="TrueNAS dashboard." style="width: 90%;">
             </div>
             <div class="modalFooterDiv">
