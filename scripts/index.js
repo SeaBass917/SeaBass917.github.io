@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Each project must have:
         //    a modal popup, the button that opens it, and the button the closes it
-        let modal = document.getElementById(`${projectName}Modal`)
+        let modal = document.getElementById(`${projectName}Modal`);
         if(modal){
             let btn = document.getElementById(`${projectName}`)
             if(btn){
@@ -38,16 +38,22 @@ document.addEventListener("DOMContentLoaded", function() {
                     // When the user clicks on the button, open the modal
                     btn.onclick = function() {
                         let modal = document.getElementById(`${this.id}Modal`)
-                        console.log(this);
                         modal.style.display = "block"
                         modal.classList.add("showModal")
                         modal.classList.remove("hideModal")
+
+                        // Load the videos
+                        // Play the first one
+                        const video_eles = modal.getElementsByTagName("video");
+                        for(let video_ele of video_eles){
+                            video_ele.preload = "auto";
+                        }
+                        if(video_eles.length) video_eles[0].play();
                     }
                     
                     // When the user clicks on (x), close the modal
                     btnClose.onclick = function() {
                         let modal = document.getElementById(`${this.id.substring(0, this.id.length-8)}Modal`)
-                        console.log(this);
                         modal.style.display = "none"
                         modal.classList.remove("showModal")
                         modal.classList.add("hideModal")
