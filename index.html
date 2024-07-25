@@ -9,6 +9,14 @@
     <title>Sebastian | Portfolio</title>
 
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/sidebar.css">
+    <link rel="stylesheet" href="style/about-section.css">
+    <link rel="stylesheet" href="style/skills-section.css">
+    <link rel="stylesheet" href="style/employment-section.css">
+    <link rel="stylesheet" href="style/education-section.css">
+    <link rel="stylesheet" href="style/projects-section.css">
+    <link rel="stylesheet" href="style/talks-section.css">
+    <link rel="stylesheet" href="style/publications-section.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="res/favicon.png">
@@ -34,8 +42,8 @@
             <a class="button" href="#home">Home</a>
             <a class="button" href="#aboutIndex">About</a>
             <a class="button" href="#skillsIndex">Skills</a>
-            <a class="button" href="#educationIndex">Education</a>
             <a class="button" href="#employmentIndex">Employment</a>
+            <a class="button" href="#educationIndex">Education</a>
             <a class="button" href="#projectsIndex">Projects</a>
             <a class="button" href="#presentationsIndex">Talks</a>
             <a class="button" href="#publicationsIndex">Publications</a>
@@ -53,7 +61,7 @@
         </div>
 
         <footer>
-            &#169; Copyright 2020 Sebastian Thiem
+            &#169; Copyright 2024 Sebastian Thiem
             <br>
             All Rights Reserved.
         </footer>
@@ -68,15 +76,14 @@
                 <img src="res/seb-coin-4.webp" alt="Sebastian presenting at COIN">
                 <div id="aboutTextContainer">
                     <div>
-                        <!-- <h1>About Me </h1> -->
                         <p>
-                            My name is Sebastian. Software Engineer, Scrum Master, and Team Lead.
+                            My name is Sebastian. Software Engineer, Scrum Master, and Tech Lead.
                             I have a passion for growing teams that push technology to the next level.
                         </p>
                     </div>
                     <ul>
                         <li>
-                            <p>Broad skill set</p>
+                            <p>Very broad skill set</p>
                         </li>
                         <li>
                             <p>Team oriented</p>
@@ -90,7 +97,6 @@
                         <li>
                             <p>Leading organizational growth</p>
                         </li>
-                        <!-- <li>A good sense of the things I know and the things I know I don't know</li> -->
                     </ul>
                 </div>
             </div>
@@ -102,23 +108,24 @@
                     <!-- <h3>High Level</h3> -->
                     <div class="tagbox tag0">
                         <p>Leadership</p>
-                        <p>Research</p>
-                        <p>Control Systems Software</p>
                         <p>Web/App Development</p>
+                        <p>Full-Stack Development</p>
+                        <p>Control Systems Software</p>
+                        <p>Research</p>
                         <p>Public Speaking</p>
                         <p>Dev Ops</p>
                         <p>Legacy Systems</p>
-                        <p>Backend Development</p>
                     </div>
                 </div>
 
                 <div>
                     <!-- <h3>Languages</h3> -->
                     <div class="tagbox tag1">
-                        <p>C++</p>
                         <p>Python</p>
-                        <p>Bash</p>
+                        <p>TypeScript</p>
                         <p>JavaScript</p>
+                        <p>C++</p>
+                        <p>Bash</p>
                         <p>Dart</p>
                         <p>C</p>
                         <p>C#</p>
@@ -131,13 +138,13 @@
                     <div class="tagbox tag2">
                         <p>Linux</p>
                         <p>Node.JS</p>
+                        <p>React</p>
                         <p>MongoDB</p>
                         <p>SQL Server</p>
                         <p>Docker</p>
                         <p>Flutter</p>
-                        <p>Tensorflow</p>
-                        <p>PyTorch</p>
-                        <p>PyQT</p>
+                        <p>Vite</p>
+                        <p>RPis</p>
                     </div>
                 </div>
             </div>
@@ -146,30 +153,82 @@
             <div id="employment">
                 <div>
                     <h1>Employment</h1>
-                    <div class="jobCard" id="job1">
+                    <div class="jobCard" id="job3">
+                        <img class="leftImg" id="job3ImgLeft" src="res/IQ_Logo.webp" alt="IQ Inc logo">
                         <div>
                             <p id="jobtitle">Senior Software Engineer | Engagement Leader -- IQ Inc</p>
-                            <p id="jobtimeline">January 2021 - present</p>
+                            <p id="jobtimeline">January 2023 - present</p>
+                            <p id="jobdescription">
+                                <b>Technical Lead</b> on 6 different projects, with an emphasis on <b>Full-Stack</b>
+                                development.
+                                <br />
+                                Worked with clients in the fields of:
+                            <div class="SplitListView">
+                                <ul>
+                                    <li>Manufacturing</li>
+                                    <li>Safety-Critical Control Systems</li>
+                                </ul>
+                                <ul>
+                                    <li>Risk And Reliability</li>
+                                    <li>Medical Image Classification</li>
+                                </ul>
+                            </div>
+                            For each of those projects I have been responsible for:
+                            <div class="SplitListView">
+                                <ul>
+                                    <li>Interpreting requirements</li>
+                                    <li>Designing software architecture</li>
+                                    <li>Implementing software</li>
+                                </ul>
+                                <ul>
+                                    <li>Refining and assigning work to my team</li>
+                                    <li>Code reviewing software</li>
+                                    <li>Testing and QA</li>
+                                </ul>
+                            </div>
+                            Recognized as a key individual for business development, I collaborate directly with
+                            potential clients to understand their needs, architect solutions, rapidly develop proofs of
+                            concept, and negotiate project proposals.
+                            </p>
+                        </div>
+                        <img class="rightImg" id="job3ImgRight" src="res/Me-At-Meeting.png" alt="IQ Inc logo">
+                    </div>
+                    <div class="jobCard" id="job2">
+                        <img class="leftImg" id="job2ImgLeft" src="res/IQ_Logo.webp" alt="IQ Inc logo">
+                        <div>
+                            <p id="jobtitle">Software Engineer | Engagement Leader -- IQ Inc</p>
+                            <p id="jobtimeline">January 2021 - January 2023</p>
                             <p id="jobdescription">
                                 <b>ScrumMaster</b> and <b>Technical Lead</b> to multiple <b>agile</b> teams of 5-7
                                 engineers.
-                                The teams worked on <b>safety-critical C++/Python control systems</b> for trains
+                                These teams worked on <b>safety-critical C++/Python control systems</b> for trains
                                 all across the globe. Served a pivotal role on the project,
-                                getting hands-on experience: <b>working with customers</b>, <b>interpreting formal
-                                    requirements</b>,
-                                <b>backlog refinement</b>, reviewing <b>test designs</b>, <b>implementing software</b>,
-                                and <b>onboarding</b>
-                                new team members. Supported <b>Medical Device</b> projects with my experience in
-                                <b>UI/UX</b>.
-                                Served as an <b>Engagement Leader</b>. In this role we <b>coach</b> and support 3-6
-                                other engineers.
-                                We are a point of contact for <b>performance reviews</b>; <b>career questions</b>; and
-                                <b>training</b> opportunities.
+                                getting hands-on experience:
+
+                            <div class="SplitListView">
+                                <ul>
+                                    <li> <b>Working with customers</b> </li>
+                                    <li> <b>Interpreting formal requirements</b> </li>
+                                    <li> <b>Backlog refinement</b> </li>
+                                </ul>
+                                <ul>
+                                    <li> Reviewing <b>test designs</b> </li>
+                                    <li> <b>Implementing software</b> </li>
+                                    <li> <b>Onboarding</b> new team members. </li>
+                                </ul>
+                            </div>
+                            Supported <b>Medical Device</b> projects with my experience in
+                            <b>UI/UX</b>.
+                            Served as an <b>Engagement Leader</b>. In this role we <b>coach</b> and support 3-6
+                            other engineers.
+                            We are a point of contact for <b>performance reviews</b>; <b>career questions</b>; and
+                            <b>training</b> opportunities.
                             </p>
                         </div>
-                        <img id="job2Img" src="res/IQ_Logo.webp" alt="IQ Inc logo">
+                        <img class="rightImg" id="job2ImgRight" src="res/trains.webp" alt="IQ Inc logo">
                     </div>
                     <div class="jobCard" id="job1">
+                        <img class="leftImg" id="job1ImgLeft" src="res/UofA.webp" alt="Spock">
                         <div>
                             <p id="jobtitle">Research Assistant -- University of Arizona</p>
                             <p id="jobtimeline">June 2019 - June 2020</p>
@@ -183,7 +242,7 @@
                                     techniques</b>.
                             </p>
                         </div>
-                        <img id="job1Img" src="res/spock-lab.webp" alt="Spock">
+                        <img class="rightImg" id="job1ImgRight" src="res/spock-lab.webp" alt="Spock">
                     </div>
                 </div>
 
@@ -239,10 +298,11 @@
                         </div>
                         <div>
                             <h2>Lux: Media Server</h2>
-                            <h4>2023-2020</h4>
+                            <h4>2024-2020</h4>
                             <div class="tagbox tag4">
                                 <p>Flutter</p>
                                 <p>MongoDB</p>
+                                <p>React</p>
                                 <p>Docker</p>
                                 <p>Python</p>
                                 <p>TrueNAS</p>

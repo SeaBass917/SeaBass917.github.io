@@ -1,0 +1,10 @@
+#publications div.card {
+    width: 680px;
+    height: 400px;
+}
+
+@media screen and (max-width: 580px) {
+    #publications div.card {
+        height: 450px;
+    }
+}

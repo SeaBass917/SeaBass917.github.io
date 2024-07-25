@@ -1,0 +1,119 @@
+div#employment {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-size: 20px;
+    width: 100%;
+}
+
+div#employment img {
+    width: 210px;
+}
+
+div#employment img.leftImg {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div#employment img.rightImg {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div#employment img#job3ImgLeft {
+    object-fit: contain;
+    background-color: white;
+}
+
+div#employment img#job3ImgRight {
+    object-fit: cover;
+}
+
+div#employment img#job2ImgLeft {
+    object-fit: contain;
+    background-color: white;
+}
+
+div#employment img#job2ImgRight {
+    object-fit: cover;
+    background-color: white;
+}
+
+div#employment img#job1ImgLeft {
+    object-fit: contain;
+    background-color: white;
+}
+
+div#employment img#job1ImgRight {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1225px) {
+    div#employment img {
+        display: none;
+    }
+
+    div#employment div {
+        text-align: left;
+    }
+}
+
+div#employment p {
+    font-size: 20px;
+    margin: 0;
+}
+
+div#employment p#jobtitle {
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 24px;
+}
+
+div#employment p#jobtimeline {
+    font-style: oblique;
+    margin-bottom: 25px;
+}
+
+div#employment div {
+    width: 100%;
+}
+
+div#employment .SplitListView {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.jobCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0px;
+    text-align: left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+div.jobCard>div {
+    padding: 40px;
+}
+
+div .jobCard:nth-last-child(1) {
+    margin: 30px 0px 0px;
+}
+
+div.jobCard>div {
+    max-width: 900px;
+}
+
+.jobCard ul {
+    padding-left: 50px;
+    list-style-position: inside;
+}
+
+.jobCard li {
+    text-align: left;
+}

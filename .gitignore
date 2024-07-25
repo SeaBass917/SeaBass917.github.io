@@ -1,0 +1,8 @@
+
+# NPM is just for me during dev.
+# I don't want to commit it.
+node_modules/
+build/
+server.js
+package-lock.json
+package.json
