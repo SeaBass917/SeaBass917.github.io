@@ -5,8 +5,8 @@ div#about {
 }
 
 div#about img {
-    width: 50%;
-    height: 538px;
+    width: 430px;
+    height: auto;
     object-fit: cover;
 
     border-bottom-left-radius: 10px;
@@ -58,8 +58,7 @@ div#aboutTextContainer li {
     }
 
     div#about img {
-        width: 30%;
-        height: 305px;
+        width: 320px;
     }
 }
 

@@ -81,6 +81,12 @@ div#main>div {
     max-width: 1400px;
 }
 
+@media screen and (max-width: 1780px) {
+    div#main>div {
+        margin: 25px 44px;
+    }
+}
+
 div#main>div#home {
     max-width: inherit;
 }

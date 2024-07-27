@@ -50,6 +50,12 @@ div#employment img#job1ImgRight {
     object-fit: cover;
 }
 
+@media screen and (max-width: 1600px) {
+    div#employment img.rightImg {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1225px) {
     div#employment img {
         display: none;
@@ -115,4 +121,5 @@ div.jobCard>div {
 
 .jobCard li {
     text-align: left;
+    margin: 10px 0px;
 }
