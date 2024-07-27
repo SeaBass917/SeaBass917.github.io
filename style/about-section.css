@@ -62,13 +62,13 @@ div#aboutTextContainer li {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1310px) {
     div#about img {
         display: none;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 980px) {
     div#about {
         text-align: center;
     }

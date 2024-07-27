@@ -15,6 +15,8 @@ div#employment img {
 div#employment img.leftImg {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    padding: 0 35px;
+    width: 140px;
 }
 
 div#employment img.rightImg {
@@ -24,7 +26,7 @@ div#employment img.rightImg {
 
 div#employment img#job3ImgLeft {
     object-fit: contain;
-    background-color: white;
+    background-color: #eeedfb;
 }
 
 div#employment img#job3ImgRight {
@@ -33,17 +35,17 @@ div#employment img#job3ImgRight {
 
 div#employment img#job2ImgLeft {
     object-fit: contain;
-    background-color: white;
+    background-color: #eeedfb;
 }
 
 div#employment img#job2ImgRight {
     object-fit: cover;
-    background-color: white;
+    background-color: #eeedfb;
 }
 
 div#employment img#job1ImgLeft {
     object-fit: contain;
-    background-color: white;
+    background-color: #eeedfb;
 }
 
 div#employment img#job1ImgRight {
@@ -82,7 +84,7 @@ div#employment p#jobtimeline {
 }
 
 div#employment div {
-    width: 100%;
+    width: calc(100% - 30px);
 }
 
 div#employment .SplitListView {
@@ -95,7 +97,7 @@ div.jobCard {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 0px;
+    margin: 30px;
     text-align: left;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
@@ -104,10 +106,6 @@ div.jobCard {
 
 div.jobCard>div {
     padding: 40px;
-}
-
-div .jobCard:nth-last-child(1) {
-    margin: 30px 0px 0px;
 }
 
 div.jobCard>div {

@@ -7,7 +7,7 @@ div.sidepanel {
     box-shadow: 20px;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 280px;
+    flex-basis: 288.666px;
 
     display: flex;
     flex-direction: column;

@@ -6,7 +6,7 @@ div#education {
 }
 
 div#education table {
-    margin: 25px;
+    margin: 30px;
     font-style: oblique;
     font-size: 20px;
     width: 100%;
@@ -33,7 +33,7 @@ div#education img {
     object-fit: fill;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1565px) {
     div#education table {
         width: 90%;
         font-size: 12pt;

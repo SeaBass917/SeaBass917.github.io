@@ -19,7 +19,13 @@ body {
     display: flex;
     font-family: Merriweather, math, 'Roboto', sans-serif;
     color: white;
-    /* font-variant: small-caps; */
+    /* background-image: linear-gradient(90deg, #0c5c67, #b9b4ab, #0c5c67); */
+    background-image: url('../res/green-hk-2-inv.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 body>div {
@@ -62,11 +68,15 @@ body>div {
  */
 
 div#main {
-    background-color: #0E111A;
+    /* Frosted glass effect */
+    background-color: rgba(80, 80, 80, 0.4);
+    backdrop-filter: blur(5px);
+
     float: right;
     width: 100%;
     overflow: scroll;
     scroll-behavior: smooth;
+    /* display: none; */
 }
 
 div#main::-webkit-scrollbar {
@@ -87,28 +97,28 @@ div#main>div {
     }
 }
 
-div#main>div#home {
-    max-width: inherit;
-}
-
 div#main>div.index {
-    background-image: linear-gradient(180deg, #1c1f27, #1c1f27, #1c1f27, #252734);
+    /* background-image: linear-gradient(180deg, #1c1f27, #1c1f27, #1c1f27, #252734); */
+    background-color: rgba(0, 41, 128, 0.329);
 }
 
 div#main>div#home {
     margin: 0px;
+    max-width: inherit;
     border: 0px;
     border-radius: 0px;
     background-image: none;
+    height: 119.333px;
 }
 
 div#main h1 {
-    margin: 25px;
+    margin: 30px;
 }
 
 div#home img {
     height: 241px;
     object-fit: cover;
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .cardbox {

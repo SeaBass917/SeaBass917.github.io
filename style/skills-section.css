@@ -3,13 +3,22 @@ div#skills {
     /* flex-wrap: wrap; */
     justify-content: space-evenly;
     border-radius: 10px;
-    padding: 25px;
+    padding: 30px;
 }
 
 @media screen and (max-width: 1550px) {
     div#skills {
         flex-wrap: wrap;
     }
+
+    div#skills .tagbox {
+        margin-bottom: 30px;
+    }
+
+    div#skills>div:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+
 }
 
 .tagbox {
